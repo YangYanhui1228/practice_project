@@ -1,13 +1,12 @@
 #include <iostream>
 using namespace std;
 
-
 template<typename T>
 void Swap(T& a, T& b)
 {
 	T temp = b;
-	T = a;
-	b = temp;
+	b = a;
+	a = temp;
 }
 
 template<typename T>
@@ -35,6 +34,7 @@ int main()
 	for (int i = 0; i < 6; i++) {
 		std::cout << a[i] << std::endl;
 	}
+	std::cout << "***********" << std::endl;
 	for (int i = 0; i < 6; i++) {
 		std::cout << b[i] << std::endl;
 	}
