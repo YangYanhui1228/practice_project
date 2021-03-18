@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void Swap(int& a, int& b)
+tempalte T
+void Swap(T& a, T& b)
 {
-	int temp = b;
-	b = a;
-	a = temp;
+	T temp = b;
+	T = a;
+	b = temp;
 }
 
-void Sort(int* ary, unsigned count, bool BigtoS = true)
+void Sort(T* ary, unsigned count, bool BigtoS = true)
 {
 	for (int i = 1; i < count ; i++)
 	{
@@ -26,11 +27,16 @@ void Sort(int* ary, unsigned count, bool BigtoS = true)
 int main()
 {
 	int a[6]{ 123, 456, 789, 256, 754, 870 };
+ 	short b[6]{ 123, 456, 789, 256, 754, 870 };
 	Sort(a, 6, false);
+	Sort(b, 6, true);
 	for (int i = 0; i < 6; i++) {
 		std::cout << a[i] << std::endl;
 	}
-
+	for (int i = 0; i < 6; i++) {
+		std::cout << b[i] << std::endl;
+	}
+	
 	return 0;
 
 }
